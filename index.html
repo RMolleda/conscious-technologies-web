@@ -95,7 +95,7 @@ nav.ancla a:hover{color:var(--tinta)}
   .orbita{animation:gira 90s linear infinite;transform-origin:260px 230px}
   @keyframes gira{to{transform:rotate(360deg)}}
 }
-.nodo-activo:hover circle{fill:#6FA3FF}
+.nodo-activo:hover .lleno{fill:#6FA3FF}
 
 /* ---------- secciones ---------- */
 section{padding:80px 0;border-bottom:1px solid var(--linea)}
@@ -216,11 +216,12 @@ footer .sello{font-family:var(--mono);font-size:.68rem;color:var(--tinta-2);lett
         <text x="260" y="296" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#9BA2AB" letter-spacing="1.5">MATRIZ</text>
 
         <a class="nodo-activo" href="https://www.conscious-harvest.com" aria-label="Visitar Conscious Harvest">
-          <line x1="268" y1="222" x2="372" y2="138" stroke="#4D8DFF" stroke-width="1" opacity=".55"/>
-          <circle cx="380" cy="132" r="7" fill="#4D8DFF"/>
-          <circle cx="380" cy="132" r="14" fill="none" stroke="#4D8DFF" stroke-width="1" opacity=".4"/>
-          <text x="402" y="128" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="13.5" fill="#E9EBEE">Conscious Harvest</text>
-          <text x="402" y="144" font-family="IBM Plex Mono,monospace" font-size="9" fill="#4D8DFF" letter-spacing="1.2">AGROTECH · ACTIVA ↗</text>
+          <line x1="268" y1="221" x2="360" y2="146" stroke="#4D8DFF" stroke-width="1.4" opacity=".65"/>
+          <circle cx="368" cy="134" r="26" fill="#4D8DFF" opacity=".12"/>
+          <circle cx="368" cy="134" r="16" fill="none" stroke="#4D8DFF" stroke-width="1.2" opacity=".55"/>
+          <circle class="lleno" cx="368" cy="134" r="8" fill="#4D8DFF"/>
+          <text x="368" y="176" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="15" fill="#E9EBEE">Conscious Harvest</text>
+          <text x="368" y="193" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#4D8DFF" letter-spacing="1.5">AGROTECH · ACTIVA ↗</text>
         </a>
 
         <line x1="251" y1="237" x2="152" y2="316" stroke="#E9EBEE" stroke-width="1" opacity=".18" stroke-dasharray="4 4"/>
